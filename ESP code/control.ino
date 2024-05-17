@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 
-const char* ssid = "Link111";
-const char* password = "qazwsxedc";
+const char* ssid = "mariam";
+const char* password = "12345678";
 const int redPin = D5;
 const int greenPin = D6;
 const int bluePin = D7;

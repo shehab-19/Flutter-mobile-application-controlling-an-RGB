@@ -53,8 +53,8 @@ class _LEDControlPageState extends State<LEDControlPage> {
   }
 
   Future<void> _sendDataToESP8266() async {
-    // Replace 'http://esp8266_ip_address/data' with your ESP32's IP address and endpoint
-    final uri = Uri.http('192.168.1.8', '/data', {'color': _selectedColor, 'brightness': _brightnessValue.toString()});
+    // IP address
+    final uri = Uri.http('192.168.67.133', '/data', {'color': _selectedColor, 'brightness': _brightnessValue.toString()});
     try {
       final response = await http.get(uri);
       if (response.statusCode == 200) {
